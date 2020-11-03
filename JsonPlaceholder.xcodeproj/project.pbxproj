@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8BF380F22551F7CA004DC47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF380F12551F7CA004DC47A /* AppDelegate.swift */; };
 		8BF380F42551F7CA004DC47A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF380F32551F7CA004DC47A /* SceneDelegate.swift */; };
-		8BF380F62551F7CA004DC47A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF380F52551F7CA004DC47A /* ViewController.swift */; };
-		8BF380F92551F7CA004DC47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF380F72551F7CA004DC47A /* Main.storyboard */; };
 		8BF380FB2551F7CC004DC47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF380FA2551F7CC004DC47A /* Assets.xcassets */; };
 		8BF380FE2551F7CC004DC47A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF380FC2551F7CC004DC47A /* LaunchScreen.storyboard */; };
+		8BF381082551F81F004DC47A /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF381072551F81F004DC47A /* PostsViewController.swift */; };
+		8BF3810C2551F8EF004DC47A /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF3810B2551F8EF004DC47A /* PostsView.swift */; };
+		8BF381102551FA5C004DC47A /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF3810F2551FA5C004DC47A /* TinyConstraints */; };
+		8BF3811425520B69004DC47A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF3811325520B69004DC47A /* ViewController.swift */; };
+		8BF3813C2552162C004DC47A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF3813B2552162C004DC47A /* Post.swift */; };
+		8BF3814025521AC5004DC47A /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF3813F25521AC5004DC47A /* PostsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BF380EE2551F7CA004DC47A /* JsonPlaceholder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonPlaceholder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF380F12551F7CA004DC47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF380F32551F7CA004DC47A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BF380F52551F7CA004DC47A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BF380F82551F7CA004DC47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF380FA2551F7CC004DC47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF380FD2551F7CC004DC47A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF380FF2551F7CC004DC47A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF381072551F81F004DC47A /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		8BF3810B2551F8EF004DC47A /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		8BF3811325520B69004DC47A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BF3813B2552162C004DC47A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8BF3813F25521AC5004DC47A /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF381102551FA5C004DC47A /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,34 @@
 		8BF380F02551F7CA004DC47A /* JsonPlaceholder */ = {
 			isa = PBXGroup;
 			children = (
+				8BF3813A25521622004DC47A /* Model */,
+				8BF381062551F814004DC47A /* Posts */,
 				8BF380F12551F7CA004DC47A /* AppDelegate.swift */,
 				8BF380F32551F7CA004DC47A /* SceneDelegate.swift */,
-				8BF380F52551F7CA004DC47A /* ViewController.swift */,
-				8BF380F72551F7CA004DC47A /* Main.storyboard */,
 				8BF380FA2551F7CC004DC47A /* Assets.xcassets */,
 				8BF380FC2551F7CC004DC47A /* LaunchScreen.storyboard */,
 				8BF380FF2551F7CC004DC47A /* Info.plist */,
+				8BF3811325520B69004DC47A /* ViewController.swift */,
 			);
 			path = JsonPlaceholder;
+			sourceTree = "<group>";
+		};
+		8BF381062551F814004DC47A /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				8BF381072551F81F004DC47A /* PostsViewController.swift */,
+				8BF3810B2551F8EF004DC47A /* PostsView.swift */,
+				8BF3813F25521AC5004DC47A /* PostsViewModel.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		8BF3813A25521622004DC47A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BF3813B2552162C004DC47A /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = JsonPlaceholder;
+			packageProductDependencies = (
+				8BF3810F2551FA5C004DC47A /* TinyConstraints */,
+			);
 			productName = JsonPlaceholder;
 			productReference = 8BF380EE2551F7CA004DC47A /* JsonPlaceholder.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 8BF380E52551F7CA004DC47A;
+			packageReferences = (
+				8BF3810E2551FA5C004DC47A /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
 			productRefGroup = 8BF380EF2551F7CA004DC47A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +159,6 @@
 			files = (
 				8BF380FE2551F7CC004DC47A /* LaunchScreen.storyboard in Resources */,
 				8BF380FB2551F7CC004DC47A /* Assets.xcassets in Resources */,
-				8BF380F92551F7CA004DC47A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +169,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF380F62551F7CA004DC47A /* ViewController.swift in Sources */,
+				8BF3811425520B69004DC47A /* ViewController.swift in Sources */,
+				8BF381082551F81F004DC47A /* PostsViewController.swift in Sources */,
 				8BF380F22551F7CA004DC47A /* AppDelegate.swift in Sources */,
+				8BF3813C2552162C004DC47A /* Post.swift in Sources */,
+				8BF3810C2551F8EF004DC47A /* PostsView.swift in Sources */,
 				8BF380F42551F7CA004DC47A /* SceneDelegate.swift in Sources */,
+				8BF3814025521AC5004DC47A /* PostsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8BF380F72551F7CA004DC47A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BF380F82551F7CA004DC47A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BF380FC2551F7CC004DC47A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BF3810E2551FA5C004DC47A /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BF3810F2551FA5C004DC47A /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BF3810E2551FA5C004DC47A /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BF380E62551F7CA004DC47A /* Project object */;
 }
